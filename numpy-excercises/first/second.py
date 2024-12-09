@@ -1,6 +1,6 @@
 import numpy as np
 
-arr = np.array([[1,2,3,4,5], [6,7,8,9,0] ])
+arr = np.array([[1,2,3,4,5], [6,7,8,9,0] ],)
 arr2 = np.array([1,2,3,4,5,6,7,8])
 # printing the shape of the array
 print(arr.shape)
@@ -15,4 +15,8 @@ print(arr3.base)
 # iterating through the array
 for x in np.nditer(arr):
     print(x)
-    
+
+# joining arrays
+np.concatenate((arr,arr2))
+np.dstack((arr))
+
