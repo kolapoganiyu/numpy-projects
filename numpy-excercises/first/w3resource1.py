@@ -12,8 +12,9 @@ print("This is the version",np.__version__)
 # 2. Help for Numpy Add Functions
 # np.info(np.add)
 
-# 3. Test if None are zero
-test = np.where(arr1 == 0)
-print(test)
-if test :
-    print("no zero here")
+# 3. Test if any are non-zero
+test = np.any(arr1)
+
+if test:
+    print("This is has values that are non-zero")
+    
